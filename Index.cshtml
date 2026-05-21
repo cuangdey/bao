@@ -1,0 +1,84 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="category-bar bg-white border-bottom">
+    <div class="container d-flex align-items-center py-2">
+        <a class="me-3 text-muted" asp-page="/Index"><i class="bi bi-house"></i> VnE-GO</a>
+        <nav class="nav flex-nowrap">
+            <a class="nav-link" href="#">Thời sự</a>
+            <a class="nav-link" href="#">Thế giới</a>
+            <a class="nav-link" href="#">Kinh doanh</a>
+            <a class="nav-link" href="#">Khoa học công nghệ</a>
+            <a class="nav-link" href="#">Góc nhìn</a>
+            <a class="nav-link" href="#">Spotlight</a>
+            <a class="nav-link" href="#">Bất động sản</a>
+            <a class="nav-link" href="#">Sức khỏe</a>
+            <a class="nav-link" href="#">Giải trí</a>
+        </nav>
+    </div>
+</div>
+
+<div class="container my-4">
+    <!-- Hero -->
+    <div class="row news-hero align-items-start gy-3">
+        <div class="col-lg-7">
+            <img src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?w=1200&q=80&auto=format&fit=crop" alt="hero" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-5">
+            <h2 class="hero-title">'Ưu tiên tái định cư trước khi triển khai Trục cảnh quan sông Hồng'</h2>
+            <p class="text-muted">Hà Nội sẽ ưu tiên xây dựng các khu tái định cư trước khi triển khai Trục Đại lộ cảnh quan sông Hồng - dự án hơn 11.400 ha, liên quan khoảng 247.000 dân ven sông, thực hiện giai đoạn 2026-2038.</p>
+            <p class="text-muted small">1h trước</p>
+        </div>
+    </div>
+
+    <!-- Content grid -->
+    <div class="row mt-4">
+        <div class="col-lg-8">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="card article-card">
+                        <img src="https://images.unsplash.com/photo-1584651264158-9a5f8ecb2d0f?w=800&q=60&auto=format&fit=crop" class="card-img-top" alt="article">
+                        <div class="card-body">
+                            <h5 class="card-title">Hà Nội giải phóng mặt bằng cho hơn 1.400 dự án</h5>
+                            <p class="card-text text-muted small">Cơ quan chức năng công bố kế hoạch giải phóng mặt bằng và hỗ trợ tái định cư cho nhiều khu vực để phục vụ các dự án phát triển đô thị.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card article-card">
+                        <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=800&q=60&auto=format&fit=crop" class="card-img-top" alt="article">
+                        <div class="card-body">
+                            <h5 class="card-title">TP HCM siết kiểm soát người nhập cảnh phòng Ebola</h5>
+                            <p class="card-text text-muted small">Các biện pháp an ninh được tăng cường tại các cửa khẩu và sân bay để giảm nguy cơ dịch bệnh lây lan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-3">
+                    <p class="small text-muted">SV nộp link github có kèm ảnh đính kèm chụp màn hình minh chứng đã chạy Web trên localhost.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <aside class="sidebar">
+                <div class="card sidebar-card mb-3">
+                    <div class="card-body">
+                        <h6 class="text-danger">Góc nhìn</h6>
+                        <h5 class="card-title">'Bóc lột' trên YouTube</h5>
+                        <p class="card-text text-muted small">Khi cơ máy Content ID của YouTube bị trục lợi, nhiều nghệ s...</p>
+                        <p class="mb-0 small text-muted"><em>Hoàng Hà</em> <span class="ms-2">24</span></p>
+                    </div>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Tin mới</a>
+                    <a href="#" class="list-group-item list-group-item-action">Thời sự</a>
+                    <a href="#" class="list-group-item list-group-item-action">Kinh tế</a>
+                    <a href="#" class="list-group-item list-group-item-action">Thể thao</a>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
